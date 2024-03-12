@@ -5,13 +5,8 @@ int main(){
 	string sentences[100];
 	int row = 0;
 	int column = 0;
-	//Row 叫列(橫)、Column 叫行(直的)
 	while(getline(cin, sentences[row])){
-		if (column > sentences[row].length()){
-			column = column;
-		}else{
-			column = sentences[row].length();
-		}
+		column = column > sentences[row].length()?column:sentences[row].length();
 		row++;
 	}
 	for(int i=0;i<column;i++){
@@ -30,3 +25,4 @@ int main(){
 	}
 	return 0;
 }
+
