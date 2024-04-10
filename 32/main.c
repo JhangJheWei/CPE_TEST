@@ -17,7 +17,6 @@ int main(int argc, char *argv[]) {
 			for(i=0;i!='\0';i++){
 				for(j=0;j<sizeof(noises);j++){
 					if(input_data[i] == noises[j]){
-						
 					}
 				}
 			}
